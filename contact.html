@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-16249QVPLH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-16249QVPLH');
+</script>
+
+  <link rel="icon" type="image/x-icon" href="images/adressbarlogo.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DIV Web is all about building website for businesses at affordable prices with prices from as low as R999.">
+  <meta name="keywords" content="Custom website design, Responsive web design, Mobile-friendly websites, Small business website design, E-commerce website design, Website redesign, Website maintenance, HTML website design, CSS website design, JavaScript website design, Website hosting, Graphic design, Branding, SEO optimization">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Websites Made Easy</title>
+</head>
+<body>
+
+
+
+
+
+  <meta property="og:image" content="https://divweb.co.za/images/logo.png">
+  <meta property="og:title" content="DIV Web | Websites Made Easy">
+  <meta property="og:description" content="Elevate your online presence with DIV Web. We specialize in captivating web design and building services. Get a seamless user experience, cutting-edge design, and bring your vision to life.">
+  
+
+
+  <header>
+    <h1 class="heading">&lt;&sol; Contact Us &gt;</h1>
+    <div id="menu" class="fas fa-bars"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="https://divweb.co.za">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="workforus.html">Work For Us</a></li>
+            <li><a href="prices.html">Prices</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+  </header><br><br><br><br><br><br><br>
+
+
+
+  <section class="contact">
+
+	<div class="content">
+    
+        <h3 class="contactformh3">Contact details<br><h6><center>
+	   <center>
+        <div class="icons">
+            <i class="fas fa-map-marker-alt"></i> <a class="area" href="https://goo.gl/maps/qh17HVjD8UFg6Y2YA">Klerksdorp North-West</a>
+        </div>
+        <div class="icons">
+            <i class="fas fa-globe"></i><a class="websitelink" href="https://divweb.co.za/">www.divweb.co.za
+        </div>
+        <div class="icons">
+            <i class="fas fa-phone"></i><a class="number" href="tel:0846384919">+27 84 638 4919</a>
+        </div>
+		<div class="icons">
+			<i class="fa-brands fa-whatsapp"></i><a class="whatsapp" href="https://api.whatsapp.com/send?phone=27846384919">+27 84 638 4919</a>
+        </div>
+		</center>
+    
+    </div>
+
+
+    <form method="post" action="https://script.google.com/macros/s/AKfycbxOwx3CmAAQAv6JJyiath1CN7JJDZpnZzpQG1b5Jotg_h33obRrDdUtRtklvYQeb1cGDQ/exec">
+      
+      <h4 class="contactformh4">Fill In The Form And We Will Contact You Shortly</h4><center>
+
+        <input type="text" class="box" placeholder="Name" name="Name" required>
+		<input type="text" class="box" placeholder="Surname" name="Surname" required>
+        <input id="Number" type="text" class="box" placeholder="Number" name="Phone" required>
+        <input type="email" class="box" placeholder="Your Email" name="Email" required>
+        <textarea id="Text" cols="30" rows="10" class="box message" placeholder="How Can We Help ?" name="Text"></textarea>
+    
+        <center><input type="submit" class="contactbtn" value="Submit"></center>
+    
+    </form>
+    
+
+
+</section>
+
+
+
+<script>
+	
+const isNumericInput = (event) => {
+  const key = event.keyCode;
+  return ((key >= 48 && key <= 57) || // Allow number line
+      (key >= 96 && key <= 105) // Allow number pad
+  );
+};
+
+const isModifierKey = (event) => {
+  const key = event.keyCode;
+  return (event.shiftKey === true || key === 35 || key === 36) || // Allow Shift, Home, End
+      (key === 8 || key === 9 || key === 13 || key === 46) || // Allow Backspace, Tab, Enter, Delete
+      (key > 36 && key < 41) || // Allow left, up, right, down
+      (
+          // Allow Ctrl/Command + A,C,V,X,Z
+          (event.ctrlKey === true || event.metaKey === true) &&
+          (key === 65 || key === 67 || key === 86 || key === 88 || key === 90)
+      )
+};
+
+const enforceFormat = (event) => {
+  // Input must be of a valid number format or a modifier key, and not longer than ten digits
+  if(!isNumericInput(event) && !isModifierKey(event)){
+      event.preventDefault();
+  }
+};
+
+const formatToPhone = (event) => {
+  if(isModifierKey(event)) {return;}
+
+  const input = event.target.value.replace(/\D/g,'').substring(0,10); // First ten digits of input only
+  const areaCode = input.substring(0,3);
+  const middle = input.substring(3,6);
+  const last = input.substring(6,10);
+
+  if(input.length > 6){event.target.value = `(${areaCode}) ${middle} - ${last}`;}
+  else if(input.length > 3){event.target.value = `(${areaCode}) ${middle}`;}
+  else if(input.length > 0){event.target.value = `(${areaCode}`;}
+};
+
+const inputElement = document.getElementById('Number');
+inputElement.addEventListener('keydown',enforceFormat);
+inputElement.addEventListener('keyup',formatToPhone);
+</script>
+
+
+<footer>
+	<div class="content">
+	  <div class="top">
+		<div class="logo-details">
+		  <span class="logo_name"><img class="footerlogo" src="images/logo.png" alt="Custom website design, Responsive web design, Mobile-friendly websites, Small business website design, E-commerce website design, Website redesign, Website maintenance, HTML website design, CSS website design, JavaScript website design, Website hosting, Graphic design, Branding, SEO optimization"> <span class="logo_name">DIV Web</span>
+		</div>
+		<div class="media-icons">
+		  <a href="https://www.facebook.com/profile.php?id=100088740354788"><i class="fab fa-facebook-f"></i></a>
+		  <a href="https://twitter.com/home"><i class="fab fa-twitter"></i></a>
+		  <a href="https://www.instagram.com/divwebsitecreator/"><i class="fab fa-instagram"></i></a>
+		  <a href="https://www.linkedin.com/in/dillenpretorius/"><i class="fab fa-linkedin-in"></i></a>
+		  <a href="https://www.youtube.com/channel/UCPqkTasTXuJXqGRq-jLx-Xg"><i class="fab fa-youtube"></i></a>
+		</div>
+	  </div>
+	  <div class="link-boxes">
+		<ul class="box">
+		  <li class="link_name">Company</li>
+		  <li><a href="https://divweb.co.za/">Home</a></li>
+		  <li><a href="aboutus.html">About Us</a></li>
+		  <li><a href="services.html">Services</a></li>
+		  <li><a href="prices.html">Prices</a></li>
+		  <li><a href="contact.html">Contact Us</a></li>
+		</ul>
+		<ul class="box">
+		  <li class="link_name">Services</li>
+		  <li><a href="webhosing.html">Web Hosting</a></li>
+		  <li><a href="webdesign.html">Web Design</a></li>
+		  <li><a href="webdevelopment.html">Web Development</a></li>
+		  <li><a href="seomarketing.html">SEO Marketing</a></li>
+		  <li><a href="grapicdesign.html">Graphic Design</a></li>
+		</ul>
+		
+		<ul class="box input-box"><br><br>
+		  <li class="link_name">Subscribe</li>
+		  <li><input type="text" placeholder="Enter your email"></li>
+		  <li><input type="button" value="Subscribe"></li>
+		</ul>
+	  </div>
+	</div>
+	<div class="bottom-details">
+	  <div class="bottom_text">
+		<span class="copyright_text"><center>Copyright © 2023 | <a href="https://divweb.co.za/">DIV Web</a>All rights reserved</center></span>
+		<span class="policy_terms">
+		</span>
+	  </div>
+	</div>
+  </footer>
+  
+  
+  
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="script.js"></script>
+  
+  
+  
+  </body>
+  </html>
